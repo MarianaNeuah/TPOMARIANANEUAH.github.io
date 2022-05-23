@@ -1,0 +1,226 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+h1{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    padding: 5px;
+    border: 1px;
+}
+h2{
+    text-align: center;
+    font-family:'Square Peg', cursive;
+}
+h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color:rgb(75, 223, 161);
+    }
+body{
+    background: #D3CCE3; 
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    background-color: black;
+     color: rgb(219, 227, 235);
+    margin: auto;
+    }
+.logo{
+    order: 1;
+    margin-top: 20px;
+    width: 35%;
+}
+.logo img{
+    width: 100%;
+}
+.nombre-pagina, .menu-de-navegacion{
+    margin: 20px 0;
+}
+.navigation{
+    display: flex;
+    flex-flow:row;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color:silver;
+    text-align: center;
+    margin: 0;
+    height: 40px;
+    padding: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.navigation a{
+    transition: ease-in-out .1s;
+    border-radius: 10px;
+}
+.navigation a:hover{
+    background: rgb(56, 172, 133);
+    transition: background-color 1s;
+}
+.homepage-section{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-content: center;
+}
+.homepage-section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+.homepage-section-1 img{
+    filter: blur(1px);
+    border-radius: 10px;
+    max-width: 70%;
+    height: auto;
+    margin: 40px 40px 40px 0;
+    
+}
+.homepage-section-1 p{
+    width: 50%;
+    margin: 25px auto;
+}
+.homepage-section-1b{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(167, 231, 186);
+    border-radius: 20px;   
+}
+.homepage-section-1b p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+.frase-micaela-kreiner{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-style: italic;
+    background-color:rgb(113, 224, 173) ;
+    color: rgb(66, 64, 64);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:60% ;
+    margin:60px 0px 60px;
+}
+.frase-micaela-kreiner p{
+    font-size: 25px;
+}
+.frase-micaela-kreiner-section{
+    display: flex;
+    justify-content: right;
+}
+a{
+    font-size: 1.5em;
+    padding: 15px;
+    text-decoration: none;
+    color: aliceblue; 
+}
+.containerfooter{
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.dondenosencontramos{
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    align-content:space-around;
+    text-align: center;
+}
+.dondenosencontramos :first-child{
+    font-size: x-large;
+}
+.redessociales{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content:space-around;
+    text-align: center;
+}
+.redessociales :first-child{
+    font-size: x-large;
+}
+.contacto{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;   
+}
+.contacto :first-child{
+    font-size: x-large;
+}
+.dondenosencontramos, .redessociales, .contacto {
+    margin-bottom: 50px;
+}
+.item .item{
+    width: 50%;
+}
+@media (min-width:768px){
+    .footer{
+        flex-direction: row;
+        margin: auto;
+        }
+    .containerfooter{
+        flex-direction: row;
+        align-items: center;
+    }
+    .dondenosencontramos, .redessociales, .contacto {
+        margin: 0 auto;
+
+    }
+}
+@media (min-width:1200px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+            
+        }
+        header{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+        .logo{
+            order: inherit;
+            margin-top: 0;
+            width: 10%;
+        }
+        .logo img{
+            margin:0px 0px 0px 20px;
+        }
+        .nombre-pagina, .menu-de-navegacion{
+            margin: 20px;
+        }
+        .homepage-section-1{
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            margin: 100px 10px 10px
+        }
+        .homepage-section-1 img{
+            max-width: 50%;
+        }
+        .frase-micaela-kreiner p{
+            font-size: 16px;
+        }
+    }

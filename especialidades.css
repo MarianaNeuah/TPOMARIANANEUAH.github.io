@@ -1,0 +1,42 @@
+.odontologiageneral, .protesis, .preventiva, .ortodoncia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    background-color: rgba(69, 206, 131, 0.719);
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+}
+.odontologiageneral, .protesis, .preventiva, .ortodoncia li{
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: xx-large;
+    text-align:center;
+}
+.odontologiageneral:hover{
+    background-image: linear-gradient(to right, rgb(70, 197, 159), rgb(114, 150, 73));
+    transition:2s;
+}
+.protesis:hover{
+    background-image: linear-gradient(to right, rgb(70, 197, 159), rgb(114, 150, 73));
+    transition:2s;
+}
+.preventiva:hover{
+    background-image: linear-gradient(to right, rgb(70, 197, 159), rgb(114, 150, 73));
+    transition:2s;
+}
+.ortodoncia:hover{
+    background-image: linear-gradient(to right, rgb(70, 197, 159), rgb(114, 150, 73));
+    transition:2s;
+}
+.especialidades-imagenes{
+    width: 50%;
+}
+.especialidades-imagenes img{
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
